@@ -8,7 +8,9 @@ body
 
 #hexagons
 {
-    display: block;
+    position: fixed;
+    top: 0;
+    /*display: block;*/
     /*margin: auto;*/
     z-index: 2;
     overflow: visible;
@@ -38,11 +40,13 @@ body
 }
 #logo
 {
-    position: absolute;
+    /*position: absolute;
     top: 240px;
     left: 0px;
-    right: 0px;
+    right: 0px;*/
+    display: block;
     margin: auto;
+    margin-top: 240px;
     z-index: 1;
 }
 
