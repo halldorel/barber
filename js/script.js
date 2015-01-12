@@ -43,21 +43,21 @@ for(var i = rows; i < rows + 2; i++)
 
 function placeHexagonAt(i, j, offsetX)
 {
-        var offsetX = 0;
-        if (i % 2 == 1)
-        {
-            offsetX = hexWidthHalf;
-        }
-        var newHexagon = hexElement.clone();
-        var xPos = j * (hexWidth + padding) + offsetX;
-        var yPos = i * (hexHeight + padding);
-        var transformAttr = 'translate(' + xPos + ', ' + yPos + ') scale(0.1)';
+    var offsetX = offsetX || 0;
+    if (i % 2 == 1)
+    {
+        offsetX = hexWidthHalf;
+    }
+    var newHexagon = hexElement.clone();
+    var xPos = j * (hexWidth + padding) + offsetX;
+    var yPos = i * (hexHeight + padding);
+    var transformAttr = 'translate(' + xPos + ', ' + yPos + ') scale(0.1)';
 
-        newHexagon.attr({
-            transform: transformAttr
-        });
+    newHexagon.attr({
+        transform: transformAttr
+    });
     
-        hexGroupElement.append(newHexagon);
+    hexGroupElement.append(newHexagon);
 }
 
 var colorizeRandomHexagons = function () {
