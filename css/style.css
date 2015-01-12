@@ -1,0 +1,43 @@
+body
+{
+    background: #2F1414;
+    margin: 0px;
+    height: 1000px;
+}
+
+#hexagons
+{
+    position: fixed;
+    z-index: 2;
+}
+
+.hexagon polygon
+{
+    stroke: #2F1414;
+    stroke-width: 30pt;
+    stroke-location: outside;
+    -webkit-transition: fill 6s linear;
+    -moz-transition: fill 6s linear;
+    -ms-transition: fill 6s linear;
+    -o-transition: fill 6s linear;
+    transition: fill 6s linear;
+}
+
+.red
+{
+    fill: rgba(240,68,68,0.36);
+}
+
+.black
+{
+    fill: rgba(69,29,29,0.98);
+}
+#logo
+{
+    position: absolute;
+    top: 240px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    z-index: 1;
+}
