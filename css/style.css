@@ -3,6 +3,7 @@ body
     background: #2F1414;
     margin: 0px;
     height: 1000px;
+    font-family: 'Cantarell', sans-serif;
 }
 
 #hexagons
@@ -46,5 +47,9 @@ body
 }
 
 .important-information {
+    display: block;
+    margin: auto;
+    width: 200px;
+    text-align: center;
     color: #FFF;
 }
