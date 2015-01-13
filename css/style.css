@@ -7,6 +7,10 @@ body
     color: #FFF;
 }
 
+a {
+    color: #FFF;
+}
+
 #hexagons
 {
     position: fixed;
@@ -46,15 +50,11 @@ body
     top: 240px;
     left: 0px;
     right: 0px;*/
-    display: block;
-    margin: auto;
     margin-top: 240px;
     z-index: 1;
 }
 
 .important-information {
-    display: block;
-    margin: auto;
     width: 200px;
     text-align: center;
     color: #FFF;
@@ -73,13 +73,15 @@ body
 
 .numero-del-telefono {
     font-size: 1.2em;
+}
+
+
+.text-center {
     text-align: center;
 }
 
 
 .bio-container {
-    display: block;
-    margin: auto;
     width: 800px;
     height: 600px;
 }
@@ -90,6 +92,34 @@ body
     text-align: justify;
 }
 
+.useless-container {
+    width: 100%;
+    height: 100%;
+    background-color: #b45200;
+}
+
 .v-space {
     margin-top: 25px;
+}
+
+.v-space-lg {
+    margin-top: 125px;
+}
+
+
+.center-div {
+    display: block;
+    margin: auto;
+}
+
+.drasl {
+    width: 42px;
+}
+
+.odd-bit {
+    border: 2px solid #FFF;
+    font-family: 'Source Code Pro', Courier;
+    line-height: 1;
+    padding: 2px 2px 3px 3px;
+    display: inline-block;
 }
