@@ -4,6 +4,7 @@ body
     margin: 0px;
     height: 1000px;
     font-family: 'Cantarell', sans-serif;
+    color: #FFF;
 }
 
 #hexagons
@@ -38,6 +39,7 @@ body
 {
     fill: rgba(69,29,29,0.98);
 }
+
 #logo
 {
     /*position: absolute;
@@ -56,4 +58,38 @@ body
     width: 200px;
     text-align: center;
     color: #FFF;
+}
+
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background-color: #FFF;
+    display: block;
+    margin: auto;
+}
+
+
+.numero-del-telefono {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+
+.bio-container {
+    display: block;
+    margin: auto;
+    width: 800px;
+    height: 600px;
+}
+
+.bio {
+    width: 390px;
+    float: left;
+    text-align: justify;
+}
+
+.v-space {
+    margin-top: 25px;
 }
