@@ -8,7 +8,7 @@ var padding = 7;
 
 var hexWidthHalf = (hexWidth + padding) / 2;
 
-var rows = Math.floor(h / hexHeight * 0.20);
+var rows = Math.floor(h / hexHeight * 0.25);
 
 console.log(w, h);
 
@@ -72,4 +72,4 @@ var colorizeRandomHexagons = function () {
 };
 
 colorizeRandomHexagons();
-setInterval(colorizeRandomHexagons, 5000);
+setInterval(colorizeRandomHexagons, 10000);

@@ -1,14 +1,25 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: pixelated;
+}
+
 body
 {
     background: #2F1414;
     margin: 0px;
     height: 1000px;
     font-family: 'Cantarell', sans-serif;
-    color: #FFF;
+    font-size: 20px;
+    color: #ccc;
 }
 
 a {
-    color: #FFF;
+    color: #ccc;
 }
 
 #hexagons
@@ -50,24 +61,34 @@ a {
     top: 240px;
     left: 0px;
     right: 0px;*/
-    margin-top: 240px;
     z-index: 1;
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
 .important-information {
-    width: 200px;
     text-align: center;
     color: #FFF;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    right: 0;
+    font-size: 25pt;
 }
 
 
 .profile-picture {
-    width: 150px;
-    height: 150px;
-    border-radius: 75px;
+    background-position: center !important;
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 180px;
+    border-radius: 120px;
     background-color: #FFF;
     display: block;
     margin: auto;
+    border: 10px solid #ccc;
 }
 
 
@@ -75,11 +96,26 @@ a {
     font-size: 1.2em;
 }
 
+.email {
+    margin-top: -20px !important;
+    font-size: 0.8em;
+}
+
 
 .text-center {
     text-align: center;
 }
 
+#container {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 1000px;
+    height: 300px;
+}
 
 .bio-container {
     width: 800px;
@@ -87,9 +123,16 @@ a {
 }
 
 .bio {
-    width: 390px;
-    float: left;
-    text-align: justify;
+    width: 250px;
+    position: absolute;
+    top: 60px;
+}
+
+.bio.left {
+    left: 0;
+}
+.bio.right {
+    right: 0;
 }
 
 .useless-container {
@@ -106,7 +149,6 @@ a {
     margin-top: 125px;
 }
 
-
 .center-div {
     display: block;
     margin: auto;
@@ -116,9 +158,21 @@ a {
     width: 42px;
 }
 
+.arrow {
+    font-size: 0.75em;
+    display: inline-block;
+}
+
+.rotate {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
 .odd-bit {
     border: 2px solid #FFF;
-    font-family: 'Source Code Pro', Courier;
+    font-family: 'Cantarell', Courier;
     line-height: 1;
     padding: 2px 2px 3px 3px;
     display: inline-block;
