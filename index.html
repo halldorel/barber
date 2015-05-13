@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=490874784347294";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
   
   <svg id="hexagons" xmlns="http://www.w3.org/2000/svg">
       <g id="hexgroup" transform="scale(1.2) translate(-42, -30)">
@@ -45,9 +53,31 @@
 
   <div class="important-information v-space center-div">
       <span class="arrow">➳</span> <a href="https://www.google.is/maps/place/Alda+Hotel/@64.143983,-21.921273,17z/data=!3m1!4b1!4m2!3m1!1s0x48d674cc16604fb7:0xac7eda8906da7bbb">Laugavegi 66</a> <span class="arrow rotate">➳</span>
+      <br>
+      <div class="fb-container">
+      <div class="fb-like" data-href="https://www.facebook.com/pages/Barber/712171312172205?fref=ts" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+      </div>
+      
   </div>
+  
+
+  <div id="instafeed"></div>
 </div> 
 
+
 <script src="js/script.js"></script>
+<!--<script src="js/instafeed.js"></script>
+<script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'user',
+        userId: 'barberbar',
+        accessToken: '2363326.1677ed0.c6a26e46ec2244939b1d7f4aac00bce0',
+
+
+    });
+    feed.run();
+</script> -->
+
+
 </body>
 </html>

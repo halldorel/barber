@@ -72,7 +72,7 @@ a {
     text-align: center;
     color: #FFF;
     position: absolute;
-    bottom: -100px;
+    bottom: -140px;
     left: 0;
     right: 0;
     font-size: 25pt;
@@ -170,10 +170,14 @@ a {
     transform: rotate(180deg);
 }
 
-.odd-bit {
-    border: 2px solid #FFF;
-    font-family: 'Cantarell', Courier;
-    line-height: 1;
-    padding: 2px 2px 3px 3px;
-    display: inline-block;
+.fb-container {
+    background: rgba(255, 255, 255, 0.3);
+    width: 480px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 20px;
+    border-radius: 4px;
+    padding: 10px;
 }
