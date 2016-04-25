@@ -1,6 +1,6 @@
 * {
     -webkit-font-smoothing: antialiased;
-    
+
     image-rendering: -moz-crisp-edges;
     image-rendering: -o-crisp-edges;
     image-rendering: -webkit-optimize-contrast;
@@ -82,6 +82,7 @@ a {
 .profile-picture {
     background-position: center !important;
     background-repeat: no-repeat;
+    background-size: cover;
     width: 180px;
     height: 180px;
     border-radius: 120px;
