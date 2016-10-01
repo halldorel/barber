@@ -183,6 +183,11 @@ a {
     padding: 10px;
 }
 
+#snapchat {
+  margin: calc(50% - 75px) 50px;
+}
+
+
 #iframe-drasl {
 	margin: auto;
 	margin-top: 240px;
