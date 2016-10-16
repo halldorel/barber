@@ -25,7 +25,7 @@ a {
 #hexagons
 {
     position: fixed;
-    top: 0;
+    top: -50px;
     /*display: block;*/
     /*margin: auto;*/
     z-index: 2;
@@ -57,10 +57,9 @@ a {
 
 #logo
 {
-    /*position: absolute;
-    top: 240px;
-    left: 0px;
-    right: 0px;*/
+    position: absolute;
+    top: -20px;
+    left: calc(50% - 202px);
     z-index: 1;
 }
 
@@ -126,12 +125,17 @@ a {
 .bio {
     width: 250px;
     position: absolute;
-    top: 60px;
+    top: 220px;
 }
 
 .bio.left {
     left: 0;
 }
+
+.bio.middle {
+    left: calc(50% - 125px);
+}
+
 .bio.right {
     right: 0;
 }
